@@ -1,0 +1,47 @@
+{
+  "name": "inference",
+  "title": "推理与部署",
+  "roles": "模型公司的 Agent 岗、端侧 Agent 岗的加考内容；Agent 推理服务优化",
+  "evidence": "中：公开面经里推理知识不是独立的 Agent 岗位方向，而是作为算法基础（KV Cache、显存、量化、Prefill/Decode）和 Runtime 内容（流式、缓存）出现；模型公司要求单独准备。专职推理引擎岗不在本库范围。",
+  "prerequisites": [
+    "core/01-llm-foundations"
+  ],
+  "chapters": [
+    {
+      "id": "inference/01-kv-cache-memory",
+      "title": "KV Cache 与显存估算",
+      "minutes": 180,
+      "weight": 3
+    },
+    {
+      "id": "inference/02-batching-pd",
+      "title": "连续批处理与 Prefill / Decode 分离",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "inference/03-speculative-decoding",
+      "title": "投机解码",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "inference/04-quantization",
+      "title": "量化：权重、激活与 KV 量化",
+      "minutes": 200,
+      "weight": 3
+    },
+    {
+      "id": "inference/05-agent-serving",
+      "title": "面向 Agent 的推理：前缀缓存、多轮 KV 复用与流式工具输出",
+      "minutes": 150,
+      "weight": 3
+    },
+    {
+      "id": "inference/06-on-device",
+      "title": "端侧部署：模型选型、运行时与端云协同",
+      "minutes": 150,
+      "weight": 1
+    }
+  ]
+}

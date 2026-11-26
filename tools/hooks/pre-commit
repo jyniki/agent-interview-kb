@@ -1,0 +1,30 @@
+#!/bin/sh
+# 隐私检查：仓库根目录的 .privacy-words.txt（不提交）每行一个敏感词，
+# 命中暂存内容就拒绝提交。加 --all 时扫描工作区全部已跟踪文件和全部 git 历史。
+root=$(git rev-parse --show-toplevel) || exit 1
+words="$root/.privacy-words.txt"
+[ -f "$words" ] || exit 0
+
+patterns=$(mktemp)
+trap 'rm -f "$patterns"' EXIT
+# 去掉空行和 # 开头的注释
+grep -v -e '^[[:space:]]*$' -e '^#' "$words" > "$patterns"
+[ -s "$patterns" ] || exit 0
+
+found=0
+if [ "$1" = "--all" ]; then
+  if git -C "$root" grep -n -I -F -f "$patterns" -- . ':!.privacy-words.txt'; then found=1; fi
+  revs=$(git -C "$root" rev-list --all 2>/dev/null)
+  if [ -n "$revs" ] && git -C "$root" grep -I -l -F -f "$patterns" $revs -- . 2>/dev/null; then found=1; fi
+else
+  if git -C "$root" diff --cached -U0 --no-color | grep '^+' | grep -v '^+++' | grep -n -F -f "$patterns"; then
+    found=1
+  fi
+  if git -C "$root" diff --cached --name-only | grep -F -f "$patterns"; then found=1; fi
+fi
+
+if [ "$found" -ne 0 ]; then
+  echo "隐私检查未通过：上面的内容包含 .privacy-words.txt 里的词。" >&2
+  exit 1
+fi
+exit 0

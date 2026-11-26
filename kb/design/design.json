@@ -1,0 +1,13 @@
+{
+  "description": "系统设计整题。每题一个目录：README.md 是题面和参考讲法，questions.md 是追问题。tags 决定它出现在哪些方向的计划和模拟面试里。minutes 是白板限时。",
+  "chapters": [
+    {"id": "design/01-enterprise-kb-qa", "title": "企业知识库问答 Agent", "minutes": 45, "tags": ["harness", "evaluation"]},
+    {"id": "design/02-coding-agent", "title": "仓库级 Coding Agent", "minutes": 45, "tags": ["harness", "evaluation"]},
+    {"id": "design/03-deep-research", "title": "Deep Research 研究助手", "minutes": 45, "tags": ["harness", "evaluation"]},
+    {"id": "design/04-agent-eval-platform", "title": "Agent 评测平台", "minutes": 45, "tags": ["evaluation", "harness"]},
+    {"id": "design/05-agent-serving", "title": "多租户 Agent 推理服务", "minutes": 45, "tags": ["inference", "harness"]},
+    {"id": "design/06-on-device-assistant", "title": "端云协同的手机个人助理", "minutes": 45, "tags": ["inference", "harness"]},
+    {"id": "design/07-agentic-rl-platform", "title": "Agentic RL 训练平台", "minutes": 45, "tags": ["training", "inference"]},
+    {"id": "design/08-tool-agent-post-training", "title": "让一个开源模型学会调用企业内部工具", "minutes": 45, "tags": ["training", "evaluation"]}
+  ]
+}

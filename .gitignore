@@ -1,0 +1,8 @@
+# 个人敏感词表，只在本地使用，见 CONTRIBUTING.md
+.privacy-words.txt
+# 用户学习数据默认在 ~/.agent-interview-kb/，万一放进仓库也不提交
+.aikb/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/

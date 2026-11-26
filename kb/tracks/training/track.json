@@ -1,0 +1,56 @@
+{
+  "name": "training",
+  "title": "Agent 后训练与 Agentic RL",
+  "roles": "Agent 后训练、Agentic RL、中训练（Midtrain）数据、推理模型训练",
+  "evidence": "最强：36 份 JD 中强化学习/Agentic RL 约 22 次、SFT 约 18 次、GRPO/DPO/PPO 约 10 次、reward/verifier 约 8 次、数据合成约 8 次、用户模拟器/环境约 6 次；算法岗面试普遍深挖。",
+  "prerequisites": [
+    "core/01-llm-foundations",
+    "core/11-post-training-basics",
+    "core/12-rl-basics",
+    "core/09-evaluation"
+  ],
+  "chapters": [
+    {
+      "id": "training/01-trajectory-data",
+      "title": "轨迹数据：合成、蒸馏、配比与中训练",
+      "minutes": 180,
+      "weight": 3
+    },
+    {
+      "id": "training/02-preference-optimization",
+      "title": "DPO 及其变体",
+      "minutes": 180,
+      "weight": 2
+    },
+    {
+      "id": "training/03-grpo-family",
+      "title": "GRPO 及其变体：Dr. GRPO、DAPO、GSPO",
+      "minutes": 210,
+      "weight": 3
+    },
+    {
+      "id": "training/04-agentic-rl",
+      "title": "Agentic RL：多轮 rollout 与工具返回 mask",
+      "minutes": 210,
+      "weight": 3
+    },
+    {
+      "id": "training/05-reward-verifier",
+      "title": "奖励与 Verifier：结果奖励、过程奖励与 reward hacking",
+      "minutes": 150,
+      "weight": 3
+    },
+    {
+      "id": "training/06-environments",
+      "title": "训练环境与用户模拟器",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "training/07-training-systems",
+      "title": "RL 训练框架、并行与显存估算",
+      "minutes": 150,
+      "weight": 2
+    }
+  ]
+}

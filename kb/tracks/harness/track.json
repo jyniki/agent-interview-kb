@@ -1,0 +1,56 @@
+{
+  "name": "harness",
+  "title": "Agent Runtime 与 Harness 工程",
+  "roles": "Agent 应用算法（偏系统）、Agent Harness / Runtime / Agent Infra、Coding Agent、Computer-Use / GUI Agent",
+  "evidence": "强：36 份沪杭 JD 中 Harness/上下文工程出现约 9 次，多家公司面试侧重沙箱、上下文压缩、长任务终止；公开面经指南认为这是 2026 年增长最明显的方向。",
+  "prerequisites": [
+    "core/02-agent-architecture",
+    "core/03-prompt-context",
+    "core/04-tool-use-mcp",
+    "core/09-evaluation"
+  ],
+  "chapters": [
+    {
+      "id": "harness/01-loop-and-harness",
+      "title": "Agent Loop 与 Harness 的边界",
+      "minutes": 180,
+      "weight": 3
+    },
+    {
+      "id": "harness/02-context-compaction",
+      "title": "上下文装配、压缩与断点续跑",
+      "minutes": 180,
+      "weight": 3
+    },
+    {
+      "id": "harness/03-sandbox-permissions",
+      "title": "权限、审批与沙箱隔离",
+      "minutes": 150,
+      "weight": 3
+    },
+    {
+      "id": "harness/04-tool-orchestration",
+      "title": "工具注册、路由、并发与错误恢复",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "harness/05-gateway-reliability",
+      "title": "模型网关、流式、缓存与熔断降级",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "harness/06-tracing-replay",
+      "title": "Trace、回放与成本统计",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "harness/07-coding-agent",
+      "title": "Coding Agent 与 Computer-Use Agent",
+      "minutes": 210,
+      "weight": 2
+    }
+  ]
+}

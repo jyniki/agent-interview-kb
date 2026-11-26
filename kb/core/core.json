@@ -1,0 +1,70 @@
+{
+  "description": "通用层：所有方向都要掌握的章节，按推荐学习顺序排列。minutes 为一般水平学习者的预估学习时长（不含复习）。",
+  "chapters": [
+    {
+      "id": "core/01-llm-foundations",
+      "title": "LLM 与 Transformer 基础",
+      "minutes": 240
+    },
+    {
+      "id": "core/02-agent-architecture",
+      "title": "Agent 架构与设计模式",
+      "minutes": 150
+    },
+    {
+      "id": "core/03-prompt-context",
+      "title": "Prompt 与 Context Engineering",
+      "minutes": 150
+    },
+    {
+      "id": "core/04-tool-use-mcp",
+      "title": "工具调用、MCP 与 Skills",
+      "minutes": 150
+    },
+    {
+      "id": "core/05-planning-reasoning",
+      "title": "规划与推理",
+      "minutes": 150
+    },
+    {
+      "id": "core/06-memory",
+      "title": "记忆系统",
+      "minutes": 150
+    },
+    {
+      "id": "core/07-rag-search",
+      "title": "RAG、搜索与 Deep Research",
+      "minutes": 180
+    },
+    {
+      "id": "core/08-multi-agent",
+      "title": "多 Agent 系统",
+      "minutes": 150
+    },
+    {
+      "id": "core/09-evaluation",
+      "title": "评测与 Benchmark",
+      "minutes": 150
+    },
+    {
+      "id": "core/10-safety-reliability",
+      "title": "安全与可靠性",
+      "minutes": 150
+    },
+    {
+      "id": "core/11-post-training-basics",
+      "title": "后训练入门：SFT 与偏好优化",
+      "minutes": 180
+    },
+    {
+      "id": "core/12-rl-basics",
+      "title": "强化学习入门：从策略梯度到 PPO",
+      "minutes": 200
+    },
+    {
+      "id": "core/13-system-design",
+      "title": "Agent 系统设计方法",
+      "minutes": 180
+    }
+  ]
+}

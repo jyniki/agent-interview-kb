@@ -1,0 +1,20 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 校验知识库
+        run: python3 tools/validate.py
+      - name: 安装 numpy（代码示例用）
+        run: python3 -m pip install numpy
+      - name: 运行知识库里的代码示例
+        run: python3 tools/run_snippets.py
+      - name: 单元测试
+        run: python3 -m unittest discover -s tests -v

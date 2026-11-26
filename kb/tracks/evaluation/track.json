@@ -1,0 +1,48 @@
+{
+  "name": "evaluation",
+  "title": "Agent 评测",
+  "roles": "Agent 评测算法、评测平台、对所有 Agent 岗都是高频加分项",
+  "evidence": "强：36 份 JD 中评测/评估体系约 14 次，有专门的 Agentic 评估岗位；公开面经数据集（948 题合并为 638 题）里最高频的主题是 Agent 评测和指标构建。",
+  "prerequisites": [
+    "core/02-agent-architecture",
+    "core/09-evaluation"
+  ],
+  "chapters": [
+    {
+      "id": "evaluation/01-eval-design",
+      "title": "评测设计：任务分层、数据集构造与指标",
+      "minutes": 180,
+      "weight": 3
+    },
+    {
+      "id": "evaluation/02-llm-as-judge",
+      "title": "LLM-as-Judge：偏差、校准与一致性",
+      "minutes": 150,
+      "weight": 3
+    },
+    {
+      "id": "evaluation/03-trajectory-eval",
+      "title": "轨迹与长程任务评测",
+      "minutes": 150,
+      "weight": 3
+    },
+    {
+      "id": "evaluation/04-benchmarks",
+      "title": "主流 Agent Benchmark 与它们的局限",
+      "minutes": 150,
+      "weight": 2
+    },
+    {
+      "id": "evaluation/05-online-regression",
+      "title": "线上评测、A/B 与回归门禁",
+      "minutes": 180,
+      "weight": 2
+    },
+    {
+      "id": "evaluation/06-eval-training-loop",
+      "title": "评测与训练闭环：bad case 回流与防过拟合",
+      "minutes": 150,
+      "weight": 2
+    }
+  ]
+}
