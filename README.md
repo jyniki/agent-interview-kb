@@ -113,8 +113,17 @@ skills/interview-coach/
   SKILL.md              skill 入口
   references/           各流程的详细说明
   scripts/coach.py      计划、排期、记录
-tools/validate.py       校验知识库格式
+tools/
+  validate.py           校验题目格式、锚点、模型分数、skill 元数据
+  check_facts.py        校验跨章共用的数字
+  check_docs.py         校验 json、题数、时长与正文一致
+  check_terms.py        按术语表检查叫法
+  run_snippets.py       逐段运行知识库里的代码
+  check_links.py        检查外部链接（每周 CI 跑一次）
+  hooks/pre-commit      本地隐私检查钩子
 tests/                  单元测试
+install.sh              把 skill 软链接到各 agent
+CHANGELOG.md            更新记录
 ```
 
 ## 贡献

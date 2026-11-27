@@ -73,6 +73,8 @@ def main() -> int:
     ap.add_argument("--list", action="store_true")
     a = ap.parse_args()
     files = [Path(f).resolve() for f in a.files] or sorted((ROOT / "kb").rglob("*.md"))
+    # 手撕题的参考实现是独立 .py 文件，整份跑
+    py_files = [] if a.files else sorted((ROOT / "kb" / "coding" / "solutions").glob("*.py"))
     total, failed = 0, []
     for md in files:
         for line, code in snippets(md):
@@ -85,8 +87,13 @@ def main() -> int:
             if not ok:
                 failed.append((where, msg))
     if a.list:
-        print(f"共 {total} 段")
+        print(f"共 {total} 段（另有 {len(py_files)} 个参考实现文件）")
         return 0
+    for py in py_files:
+        total += 1
+        ok, msg = run(py.read_text(encoding="utf-8"))
+        if not ok:
+            failed.append((str(py.relative_to(ROOT)), msg))
     for where, msg in failed:
         print(f"✗ {where}\n  " + msg.replace("\n", "\n  "))
     print(f"运行 {total} 段代码，失败 {len(failed)} 段。")

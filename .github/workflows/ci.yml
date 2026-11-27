@@ -12,6 +12,12 @@ jobs:
           python-version: "3.11"
       - name: 校验知识库
         run: python3 tools/validate.py
+      - name: 校验共用数字
+        run: python3 tools/check_facts.py
+      - name: 校验文档一致性
+        run: python3 tools/check_docs.py
+      - name: 校验术语
+        run: python3 tools/check_terms.py
       - name: 安装 numpy（代码示例用）
         run: python3 -m pip install numpy
       - name: 运行知识库里的代码示例
