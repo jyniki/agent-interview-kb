@@ -7,7 +7,7 @@
 ## 1 组卷
 
 ```bash
-python3 scripts/coach.py mock --track <方向> -n 6 --json
+python3 <skill目录>/scripts/coach.py mock --track <方向> -n 6 --json
 ```
 
 不指定 `--track` 时用主方向。脚本优先选没练过和上次得分低的题，难度高的在前；大约一半来自该方向章节，其余来自通用层。

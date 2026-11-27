@@ -5,7 +5,7 @@
 ## 1 取任务
 
 ```bash
-python3 scripts/coach.py today --json
+python3 <skill目录>/scripts/coach.py today --json
 ```
 
 返回内容：

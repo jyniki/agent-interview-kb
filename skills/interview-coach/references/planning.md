@@ -3,7 +3,7 @@
 ## 生成
 
 ```bash
-python3 scripts/coach.py plan --json
+python3 <skill目录>/scripts/coach.py plan --json
 ```
 
 脚本的排法：

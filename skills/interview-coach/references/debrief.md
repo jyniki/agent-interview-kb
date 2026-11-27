@@ -9,13 +9,13 @@
 3. 找到对应题：
 
    ```bash
-   python3 scripts/coach.py debrief --qid <题号> --score <当时答得怎样 0/1/2> --company "公司或轮次" --note "被追问了xxx"
+   python3 <skill目录>/scripts/coach.py debrief --qid <题号> --score <当时答得怎样 0/1/2> --company "公司或轮次" --note "被追问了xxx"
    ```
 
 4. 知识库里没有：
 
    ```bash
-   python3 scripts/coach.py debrief --text "题目原文" --score 0 --company "公司或轮次"
+   python3 <skill目录>/scripts/coach.py debrief --text "题目原文" --score 0 --company "公司或轮次"
    ```
 
    脚本会生成 `custom-001` 这样的题号。这类题没有标准答案，复习时由你和用户一起整理要点；如果这道题有通用价值，可以建议用户把它贡献到知识库（见仓库的 CONTRIBUTING.md，记得去掉公司和个人信息）。

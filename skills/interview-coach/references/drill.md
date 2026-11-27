@@ -5,7 +5,7 @@
 1. **取题**：
 
    ```bash
-   python3 scripts/coach.py next --json
+   python3 <skill目录>/scripts/coach.py next --json
    ```
 
    只练某一章时加 `--chapter <章节ID>`。本轮已经练过、想跳过的题加 `--exclude id1,id2`。
@@ -15,7 +15,7 @@
 3. **用户作答后**取评分参考：
 
    ```bash
-   python3 scripts/coach.py show <题号> --answer --json
+   python3 <skill目录>/scripts/coach.py show <题号> --answer --json
    ```
 
 4. **追问一层**：从 `followups` 里挑一个用户没覆盖到的追问。用户的主回答已经很完整时，挑最深的那个。
@@ -30,7 +30,7 @@
 7. **记录**：
 
    ```bash
-   python3 scripts/coach.py record <题号> <得分> --note "卡在：xxx"
+   python3 <skill目录>/scripts/coach.py record <题号> <得分> --note "卡在：xxx"
    ```
 
    `--note` 写一句卡住的点，下次复习时你可以先看一眼。

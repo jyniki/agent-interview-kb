@@ -5,7 +5,7 @@
 ## 1 选题
 
 ```bash
-python3 scripts/coach.py mock --design --track <方向> --json
+python3 <skill目录>/scripts/coach.py mock --design --track <方向> --json
 ```
 
 返回题目所在目录。只读 README 的“题面”一节念给用户，其余部分（澄清假设、估算、架构、评分要点）在用户作答前都不要展示。
@@ -30,5 +30,5 @@ python3 scripts/coach.py mock --design --track <方向> --json
 设计题本身不单独记分。它的追问题（`design-` 开头的题号）在用户学完这道设计题后进入复习队列：
 
 ```bash
-python3 scripts/coach.py learned design/<题目目录>
+python3 <skill目录>/scripts/coach.py learned design/<题目目录>
 ```

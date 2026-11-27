@@ -23,7 +23,7 @@
 用户不确定自己的强弱项时，提议做 5-8 道诊断题：
 
 ```bash
-python3 scripts/coach.py diagnose -n 6 --json
+python3 <skill目录>/scripts/coach.py diagnose -n 6 --json
 ```
 
 按 [drill.md](drill.md) 的方式逐题提问、打分，但诊断时不追问、不让用户重答。诊断结果用 `record` 记录。得 0 分的章节记为 weak，得 2 分的记为 strong，完全答不上的整个方向也可以标 weak。
@@ -31,7 +31,7 @@ python3 scripts/coach.py diagnose -n 6 --json
 ## 3 写入画像
 
 ```bash
-python3 scripts/coach.py init \
+python3 <skill目录>/scripts/coach.py init \
   --tracks training,harness --primary training \
   --daily-minutes 150 --rest-weekdays 6 \
   --start 2026-12-01 --interview 2027-01-20 \
