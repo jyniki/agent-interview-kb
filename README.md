@@ -5,7 +5,7 @@ Agent 算法工程师面试知识库，附带一个学习教练 Agent Skill。
 - **知识库**：通用层 + 四个垂类方向，加系统设计整题、手撕题、论文精读和面试方法（后训练与 Agentic RL、Runtime 与 Harness、Agent 评测、推理与部署），每章有知识正文和固定格式的面试题。方向按招聘需求调研确定，依据见 [kb/tracks/README.md](kb/tracks/README.md)。
 - **学习教练 skill `interview-coach`**：装进你自己的 agent（Claude Code、Codex 等支持 Agent Skills 的工具），它会按你的方向和时间定制学习计划，每天给出当天任务，闭卷提问、按评分参考打分，并按掌握程度安排复习。
 
-> **内容状态**：39 个知识章节（通用层 13 章，training、harness、evaluation、inference 四个方向 26 章）、8 道系统设计整题、20 道手撕题、13 篇论文精读和 4 篇面试方法，共 432 道题。每个知识章都写成技术文档：从定义推导、可运行的最小实现、数值例子和常见坑，全库 254 段代码由脚本逐段运行验证。各部分情况见 [知识地图](kb/00-roadmap.md#内容状态)。欢迎[贡献](CONTRIBUTING.md)。
+> **内容状态**：39 个知识章节（通用层 13 章，training、harness、evaluation、inference 四个方向 26 章）、8 道系统设计整题、20 道手撕题、13 篇论文精读和 4 篇面试方法，共 450 道题。每个知识章都写成技术文档：从定义推导、可运行的最小实现、数值例子和常见坑，全库 254 段代码由脚本逐段运行验证。各部分情况见 [知识地图](kb/00-roadmap.md#内容状态)。欢迎[贡献](CONTRIBUTING.md)。
 
 ## 适合谁
 
