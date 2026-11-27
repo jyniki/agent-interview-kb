@@ -27,7 +27,7 @@ Agent 算法工程师面试知识库，附带一个学习教练 Agent Skill。
 需要 Python 3.9 及以上，不需要安装任何第三方包。
 
 ```bash
-git clone https://github.com/<your-name>/agent-interview-kb.git
+git clone https://github.com/jyniki/agent-interview-kb.git
 ```
 
 ```bash
