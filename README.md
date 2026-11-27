@@ -34,7 +34,15 @@ git clone https://github.com/jyniki/agent-interview-kb.git
 cd agent-interview-kb && ./install.sh
 ```
 
-`install.sh` 把 skill 软链接到 `~/.claude/skills/`（Claude Code）和 `~/.agents/skills/`（Codex）。只装一个就传参数：`./install.sh claude` 或 `./install.sh codex`。其他支持 Agent Skills 的工具，把 `skills/interview-coach` 链接或复制到它的 skill 目录即可。
+`install.sh` 把 skill 软链接到各 agent 的用户级 skill 目录：
+
+| 参数 | 装到 | 适用 |
+|---|---|---|
+| `claude` | `~/.claude/skills/` | Claude Code |
+| `codex` | `~/.codex/skills/` 和 `~/.agents/skills/` | Codex CLI（不同版本读不同位置，两个都装） |
+| `dsh` | `~/.dsh/skills/` | dsh |
+
+不带参数（`./install.sh`）三个都装。软链接指向本仓库，`git pull` 更新知识库后 skill 自动生效。其他支持 Agent Skills 的工具，把 `skills/interview-coach` 链接或复制到它的 skill 目录即可。
 
 然后在 agent 里说：
 
